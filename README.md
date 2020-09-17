@@ -1,1 +1,1 @@
-# VHDL_Exercise
+# HDL_Exercise
