@@ -1,0 +1,40 @@
+# UCF file for the Posedge-One board
+
+# Main board wing pin [] to FPGA pin Pxx map
+# -------W2-------    ------W1.A-----     ------W1.B------
+# [GND] [A01] P111    [GND] [A01] P85     P87 [B01]
+# [2V5] [A02] P112    [2V5] [A02] P83     P84 [B02]
+# [3V3] [A03] P114    [3V3] [A03] P81     P82 [B03]
+# [5V0] [A04] P115    [5V0] [A04] P79     P80 [B04]
+#       [A05] P116          [A05] P75     P78 [B05] [5V0]
+#       [A06] P117          [A06] P67     P74 [B06] [3V3]
+#       [A07] P118          [A07] P59     P66 [B07] [2V5]
+#       [A08] P119          [A08] P57     P58 [B08] [GND]
+# [GND] [A09] P120    [GND] [A09] P55     P56 [B09]
+# [2V5] [A10] P121    [2V5] [A10] P48     P51 [B10]
+# [3V3] [A11] P123    [3V3] [A11] P46     P47 [B11]
+# [5V0] [A12] P124    [5V0] [A12] P44     P45 [B12]
+#       [A13] P126          [A13] P41     P43 [B13] [5V0]
+#       [A14] P127          [A14] P35     P40 [B14] [3V3]
+#       [A15] P131          [A15] P33     P34 [B15] [2V5]
+#       [A16] P132          [A16] P30     P32 [B16] [GND]
+
+
+# Clock and Reset pins
+NET CLOCK             LOC = p50;   # 24MHz on-board clock
+NET A(0)			LOC = p85;
+NET A(1)			LOC = p83;
+NET A(2)			LOC = p81;
+NET A(3)			LOC = p79;
+NET A(4)			LOC = p75;
+NET Fin			LOC = p67;
+NET R				LOC = p59;
+NET washmode	LOC = p57;		
+NET ttt(0)		LOC = p55;
+NET ttt(1)		LOC = p48;
+NET ttt(2)		LOC = p46;
+NET ttt(3)		LOC = p44;	
+
+# GPIO pins
+
+
